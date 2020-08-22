@@ -1,87 +1,100 @@
 import Layout from '../components/Layout'
+import { Container, Row, Col } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import { faCookie } from '@fortawesome/free-solid-svg-icons'
 import { faCannabis } from '@fortawesome/free-solid-svg-icons'
 import { faJoint } from '@fortawesome/free-solid-svg-icons'
 import { faBong } from '@fortawesome/free-solid-svg-icons'
-import Link from 'next/link'
+import Dropdown from 'react-bootstrap/Dropdown'
 
 
 const Index = () => (
     <Layout>
         <>
-            <h1>The Menu</h1>
-            <div id="icons">
-                <div id="coffee">
-                    <FontAwesomeIcon icon={faCoffee} height="150px" width="150px">
-                        
-                    </FontAwesomeIcon>
-                    <br />
-                    <button type="button" className="btn btn-success" id="btn-weed">Coffee</button>
-                </div>
+            <Container fluid>
+                <h1>The Menu</h1>
+                <Row>
+                   
+                    <Col xs={6} sm={3}>
+                            <Dropdown>
+                                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                <FontAwesomeIcon icon={faCannabis} height="130px" width="130px" />
+                                </Dropdown.Toggle>
 
-                <div id="cannabis">
-                    <FontAwesomeIcon icon={faCannabis} height="150px" width="150px" />
-                    <br />
-                    <button type="button" className="btn btn-success" id="btn-weed">Flower</button>
-                </div>
-                <div id="joint">
-                    <FontAwesomeIcon icon={faJoint} height="150px" width="150px" />
-                    <br />
-                    <button type="button" className="btn btn-success" id="btn-weed">Pre-Rolls</button>
-                </div>
-                <div id="bong">
-                    <FontAwesomeIcon icon={faBong} height="150px" width="150px" />
-                    <br />
-                    <button type="button" className="btn btn-success" id="btn-weed">Merch</button>
-                </div>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1">Sativa</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Indica</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">hybrid</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                    </Col>
+                    
+                    <Col xs={6} sm={3}>
+                        
+                        <Dropdown>
+                                <Dropdown.Toggle variant="danger" id="dropdown-basic">
+                                <FontAwesomeIcon icon={faCookie} height="130px" width="130px" />
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1">Sativa</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Indica</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">hybrid</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        
+                    </Col>
+                    
+                    <Col xs={6} sm={3}>
+                        
+                        <Dropdown>
+                                <Dropdown.Toggle variant="warning" id="dropdown-basic">
+                                <FontAwesomeIcon icon={faJoint} height="130px" width="130px" />
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1">Sativa</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Indica</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">hybrid</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+            
+                        
+                    </Col>
+
+                    <Col xs={6} sm={3}>
+                       
+                        <Dropdown>
+                                <Dropdown.Toggle variant="primary" id="dropdown-basic">
+                                <FontAwesomeIcon icon={faBong} height="130px" width="130px" />
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1">Sativa</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Indica</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">hybrid</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                        
+                    </Col>
+
+                </Row>
                 <br />
-                <br />
-            </div>
-            <style jsx>
-                {`
+
+                <style jsx>
+                    {`
+
+             
                h1 {
                    text-align: center;
                    margin-top: 10px;
-               }
-               #coffee {
-                   color: brown;
-                   display: inline-block;
-                   margin-left: 19%;
-                   border: 1px solid black;
-                   border-radius: 25px;
-
-               }
-               #cannabis {
-                   color: green;
-                   display: inline-block;
-                   margin-left: 15px;
-                   border: 1px solid black;
-                   border-radius: 25px;
-               }
-               #joint {
-                   color: brown;
-                   display: inline-block;
-                   margin-left: 15px;
-                   border: 1px solid black;
-                   border-radius: 25px;
-               }
-               #bong{
-                display: inline-block;
-                margin-left: 15px;
-                color: blue;
-                border: 1px solid black;
-                border-radius: 25px;
-               } 
-               #btn-weed {
-                   display: flex;
-                   margin-left: 35px;
-                   margin-top: 5px;
-                   margin-bottom: 3px;
+                   text-decoration: underline;
                }
              
                `}
-            </style>
+                </style>
+
+            </Container>
         </>
     </Layout>
 )
