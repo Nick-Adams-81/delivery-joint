@@ -18,7 +18,8 @@ const Index = () => (
                     <Col xs={6} sm={3}>
                             <Dropdown>
                                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faCannabis} height="130px" width="130px" />
+                                <FontAwesomeIcon icon={faCannabis} height="90px" width="130px" />
+                                <p id="lead">Flower</p>
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
@@ -33,9 +34,10 @@ const Index = () => (
                         
                         <Dropdown>
                                 <Dropdown.Toggle variant="danger" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faCookie} height="130px" width="130px" />
+                                <FontAwesomeIcon icon={faCookie} height="90px" width="130px" />
+                                <p id="lead">Edibles</p>
                                 </Dropdown.Toggle>
-
+                                  
                                 <Dropdown.Menu>
                                     <Dropdown.Item href="#/action-1">Sativa</Dropdown.Item>
                                     <Dropdown.Item href="#/action-2">Indica</Dropdown.Item>
@@ -49,7 +51,8 @@ const Index = () => (
                         
                         <Dropdown>
                                 <Dropdown.Toggle variant="warning" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faJoint} height="130px" width="130px" />
+                                <FontAwesomeIcon icon={faJoint} height="90px" width="130px" />
+                                <p id="lead">Pre-Rolls</p>
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
@@ -66,9 +69,10 @@ const Index = () => (
                        
                         <Dropdown>
                                 <Dropdown.Toggle variant="primary" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faBong} height="130px" width="130px" />
+                                <FontAwesomeIcon icon={faBong} height="90px" width="130px" />
+                                <p id="lead">Merch</p>
                                 </Dropdown.Toggle>
-
+         
                                 <Dropdown.Menu>
                                     <Dropdown.Item href="#/action-1">Sativa</Dropdown.Item>
                                     <Dropdown.Item href="#/action-2">Indica</Dropdown.Item>
@@ -91,6 +95,11 @@ const Index = () => (
                    text-decoration: underline;
                    font-family: Georgia, serif;
                    color: gray;
+               }
+               #lead {
+                   margin-top: 4px;
+                   font-family: "Times New Roman", Times, serif;
+                   font-size: 20px;
                }
              
                `}
