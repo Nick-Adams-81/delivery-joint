@@ -89,6 +89,8 @@ const Index = () => (
                    text-align: center;
                    margin-top: 10px;
                    text-decoration: underline;
+                   font-family: Georgia, serif;
+                   color: gray;
                }
              
                `}
