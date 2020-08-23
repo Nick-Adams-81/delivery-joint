@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => (
     <div>
@@ -11,8 +13,13 @@ const Navbar = () => (
                             <Link href="/"><a className="nav-link">Home</a></Link>
                         </li>
                         <li className="nav-item">
-                            <Link href="#"><a className="nav-link">test link</a></Link>
+                            <Link href="#">
+                                <a className="nav-link">
+                                    <FontAwesomeIcon icon={faShoppingCart} height="40px" width="40px" />
+                                </a>
+                            </Link>
                         </li>
+
                     </ul>
                 </div>
             </div>
