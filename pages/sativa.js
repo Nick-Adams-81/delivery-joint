@@ -2,12 +2,14 @@ import Layout from '../components/Layout'
 import { Container, Row, Col } from 'reactstrap'
 import fetch from 'isomorphic-unfetch'
 import Index from '.';
+import ItemCardContent from '../components/ItemCardContent'
 
 
 const Sativa = (props) => (
     <Layout>
         <>
         <h1>Sativa</h1>
+        <ItemCardContent users={props.users} />
 
 
         </>
@@ -18,9 +20,10 @@ const Sativa = (props) => (
 Index.getInitialProps = async function () {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts?userid=1')
      const data = await res.json()
+     console.log("hello")
 
      return {
-         fake: data
+         user: data.user
      }
 }
  
