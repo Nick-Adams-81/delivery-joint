@@ -1,7 +1,7 @@
 import Layout from '../components/Layout'
 import { Container, Row, Col } from 'reactstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCookie } from '@fortawesome/free-solid-svg-icons'
+import { faCookieBite } from '@fortawesome/free-solid-svg-icons'
 import { faCannabis } from '@fortawesome/free-solid-svg-icons'
 import { faJoint } from '@fortawesome/free-solid-svg-icons'
 import { faBong } from '@fortawesome/free-solid-svg-icons'
@@ -23,9 +23,9 @@ const Index = () => (
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#/action-1">Sativa</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2">Indica</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3">hybrid</Dropdown.Item>
+                                    <Dropdown.Item href="/sativa">Sativa</Dropdown.Item>
+                                    <Dropdown.Item href="/indica">Indica</Dropdown.Item>
+                                    <Dropdown.Item href="/hybrid">hybrid</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                     </Col>
@@ -34,7 +34,7 @@ const Index = () => (
                         
                         <Dropdown>
                                 <Dropdown.Toggle variant="danger" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faCookie} height="90px" width="130px" />
+                                <FontAwesomeIcon icon={faCookieBite} height="90px" width="130px" />
                                 <p id="lead">Edibles</p>
                                 </Dropdown.Toggle>
                                   

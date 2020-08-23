@@ -4,7 +4,7 @@ const Navbar = () => (
     <div>
         <nav className="navbar navbar-expand navbar dark bg-dark mb-4" id="navbar">
             <div className="container">
-                <a className="navbar-brand" href="#">DeliveryJoint</a>
+                <a className="navbar-brand" href="/">DeliveryJoint</a>
                 <div className="collapse navbar-collapse">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">

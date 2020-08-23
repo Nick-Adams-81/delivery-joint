@@ -48,7 +48,7 @@ const Jumbotron = () => (
             h3 {
                 color: white;
                 font-size: 40px;
-                font-family: serif;
+                font-family: ;
                 skew: 20deg;
             }
      
