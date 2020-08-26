@@ -1,13 +1,20 @@
 import Layout from '../components/Layout'
-import { Container, Row, Col } from 'reactstrap'
+import HybridCard from '../components/HybridCard'
 
 
-const Hybrid = (props) => (
+const Hybrid = () => (
     <Layout>
         <>
         <h1>Hybrid</h1>
-        
-
+        <HybridCard />
+        <style jsx>
+            {`
+            h1 {
+                text-align: center;
+                text-decoration: underline;
+            }
+            `}
+        </style>
         </>
     </Layout>
 

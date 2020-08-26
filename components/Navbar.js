@@ -15,7 +15,7 @@ const Navbar = () => (
                         <li className="nav-item">
                             <Link href="#">
                                 <a className="nav-link">
-                                    <FontAwesomeIcon icon={faShoppingCart} height="40px" width="40px" />
+                                    <FontAwesomeIcon icon={faShoppingCart} height="30px" width="30px" />
                                 </a>
                             </Link>
                         </li>

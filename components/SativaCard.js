@@ -1,13 +1,17 @@
 import axios from 'axios';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import {
+    Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle
+} from 'reactstrap';
 
 
 
 
-class ItemCardContent extends React.Component {
+
+class SativaCard extends React.Component {
     state = { posts: [] };
 
     async componentDidMount() {
@@ -21,32 +25,27 @@ class ItemCardContent extends React.Component {
         return (
             <Container>
                 <Row>
-                <div className="main">
-                    {this.state.posts.length > 0 ? (
-                        <div>{this.state.posts.map((post) =>
-                            
-                            <ul className="list-group" id="list">
-                                <Col>
-                                <li className="list-group-item" id="one">
-                                    {post.title}
-                                </li>
-                                </Col>
-                                <Col>
-                                <li className="list-group-item" id="two">
-                                    {post.body}
-                                    <br />
-                                    <Button variant="success" id="btn">Add to cart</Button>
-                                </li>
-                                </Col>
-                            </ul>
-                        )}</div>
-                    ) : (
-                            <div className="spinner-border text-primary" role="status">
-                                <span className="sr-only">Loading...</span>
-                            </div>
-                        )}
-                    <style jsx>
-                        {`
+                    <div className="main">
+                        {this.state.posts.length > 0 ? (
+                            <div>{this.state.posts.map((post) =>
+                                <div id="card-body">
+                                    <CardBody>
+                                        <CardTitle>{post.title}</CardTitle>
+                                        <br />
+                                        <CardSubtitle>{post.body}</CardSubtitle>
+                                        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                                        <Button>Button</Button>
+                                    </CardBody>
+                                </div>
+
+                            )}</div>
+                        ) : (
+                                <div className="spinner-border text-primary" role="status">
+                                    <span className="sr-only">Loading...</span>
+                                </div>
+                            )}
+                        <style jsx>
+                            {`
                         #list {
                             color: blue;
                             width:40%;
@@ -58,10 +57,14 @@ class ItemCardContent extends React.Component {
                         #btn {
                             margin-left: px;
                         }
+                        #card-body {
+                            width: 30%;
+                            display: inline-block;
+                        }
                       
                     `}
-                    </style>
-                </div>
+                        </style>
+                    </div>
                 </Row>
             </Container>
         )
@@ -70,4 +73,4 @@ class ItemCardContent extends React.Component {
 }
 
 
-export default ItemCardContent;
+export default SativaCard;

@@ -8,8 +8,8 @@ import SativaCard from '../components/SativaCard'
 const Sativa = (props) => (
     <Layout>
         <>
-        <h1>Sativa</h1>
-        <SativaCard />
+            <h1>Sativa</h1>
+            <SativaCard />
 
             <style jsx>
                 {
@@ -27,5 +27,5 @@ const Sativa = (props) => (
 
 );
 
- 
+
 export default Sativa;
