@@ -23,16 +23,16 @@ class HybridCard extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
- 
-   
 
-     handleClick(e)  {
-         alert('hello')
-         e.preventDefault()
+
+
+    handleClick(e) {
+        alert('hello')
+        e.preventDefault()
     }
 
 
-    handleSubmit (e) {
+    handleSubmit(e) {
         alert('wassup')
         e.preventDefault()
     }
@@ -46,17 +46,17 @@ class HybridCard extends React.Component {
                             <div>{this.state.posts.map((post) =>
                                 <div id="card-body">
                                     <Card>
-                                    <CardBody>
-                                        <CardTitle>{post.name}</CardTitle>
-                                        <br />
-                                        <CardSubtitle>{post.body}</CardSubtitle>
-                                        <br />
-                                        <CardText>{post.email}</CardText>
-                                        <br />
-                                        <div id="btn">
-                                        <Button onClick={this.handleSubmit}>Push Me!!!</Button>
-                                        </div> 
-                                    </CardBody>
+                                        <CardBody>
+                                            <CardTitle>{post.name}</CardTitle>
+                                            <br />
+                                            <CardSubtitle>{post.body}</CardSubtitle>
+                                            <br />
+                                            <CardText>{post.email}</CardText>
+                                            <br />
+                                            <div id="btn">
+                                                <Button onClick={this.handleSubmit}>Push Me!!!</Button>
+                                            </div>
+                                        </CardBody>
                                     </Card>
                                 </div>
 
@@ -82,6 +82,8 @@ class HybridCard extends React.Component {
                         #card-body {
                             width: 30%;
                             display: inline-block;
+                            margin: 5px;
+                            box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
                         }
                       
                     `}

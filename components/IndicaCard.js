@@ -31,7 +31,9 @@ class IndicaCard extends React.Component {
                                 <div id="card-body">
                                     <Card>
                                         <CardBody>
+                                            <div id="title">
                                             <CardTitle>{post.name}</CardTitle>
+                                            </div>
                                             <br />
                                             <CardSubtitle>{post.body}</CardSubtitle>
                                             <br />
@@ -45,8 +47,8 @@ class IndicaCard extends React.Component {
                                 </div>
 
                             )}
-                            <br />
-                            <br />
+                                <br />
+                                <br />
                             </div>
                         ) : (
                                 <div className="spinner-border text-primary" role="status">
@@ -69,6 +71,11 @@ class IndicaCard extends React.Component {
                         #card-body {
                             width: 30%;
                             display: inline-block;
+                            margin: 5px;
+                            box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
+                        }
+                        #title {
+                            
                         }
                       
                     `}

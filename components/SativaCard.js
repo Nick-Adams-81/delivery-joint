@@ -65,7 +65,8 @@ class SativaCard extends React.Component {
                         #card-body {
                             width: 30%;
                             display: inline-block;
-                            padding: 5px;
+                            margin: 5px;
+                            box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
                         }
                        
                       
