@@ -19,6 +19,22 @@ class HybridCard extends React.Component {
         this.setState({ posts: res.data })
         console.log(res)
 
+        this.handleClick = this.handleClick.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+    }
+
+ 
+   
+
+     handleClick(e)  {
+         alert('hello')
+         e.preventDefault()
+    }
+
+
+    handleSubmit (e) {
+        alert('wassup')
+        e.preventDefault()
     }
 
     render() {
@@ -29,6 +45,7 @@ class HybridCard extends React.Component {
                         {this.state.posts.length > 0 ? (
                             <div>{this.state.posts.map((post) =>
                                 <div id="card-body">
+                                    <Card>
                                     <CardBody>
                                         <CardTitle>{post.name}</CardTitle>
                                         <br />
@@ -37,10 +54,10 @@ class HybridCard extends React.Component {
                                         <CardText>{post.email}</CardText>
                                         <br />
                                         <div id="btn">
-                                        <Button>Push Me!!!</Button>
-                                        </div>
-                                       
+                                        <Button onClick={this.handleSubmit}>Push Me!!!</Button>
+                                        </div> 
                                     </CardBody>
+                                    </Card>
                                 </div>
 
                             )}</div>

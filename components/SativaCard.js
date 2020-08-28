@@ -29,6 +29,7 @@ class SativaCard extends React.Component {
                         {this.state.posts.length > 0 ? (
                             <div>{this.state.posts.map((post) =>
                                 <div id="card-body">
+                                    <Card>
                                     <CardBody>
                                         <CardTitle>{post.title}</CardTitle>
                                         <br />
@@ -36,9 +37,13 @@ class SativaCard extends React.Component {
                                         <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
                                         <Button>Button</Button>
                                     </CardBody>
+                                    </Card>
                                 </div>
 
-                            )}</div>
+                            )}
+                            <br />
+                            <br />
+                            </div>
                         ) : (
                                 <div className="spinner-border text-primary" role="status">
                                     <span className="sr-only">Loading...</span>
@@ -60,7 +65,9 @@ class SativaCard extends React.Component {
                         #card-body {
                             width: 30%;
                             display: inline-block;
+                            padding: 5px;
                         }
+                       
                       
                     `}
                         </style>

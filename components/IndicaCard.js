@@ -29,21 +29,25 @@ class IndicaCard extends React.Component {
                         {this.state.posts.length > 0 ? (
                             <div>{this.state.posts.map((post) =>
                                 <div id="card-body">
-                                    <CardBody>
-                                        <CardTitle>{post.name}</CardTitle>
-                                        <br />
-                                        <CardSubtitle>{post.body}</CardSubtitle>
-                                        <br />
-                                        <CardText>{post.email}</CardText>
-                                        <br />
-                                        <div id="btn">
-                                        <Button>Push Me!!!</Button>
-                                        </div>
-                                       
-                                    </CardBody>
+                                    <Card>
+                                        <CardBody>
+                                            <CardTitle>{post.name}</CardTitle>
+                                            <br />
+                                            <CardSubtitle>{post.body}</CardSubtitle>
+                                            <br />
+                                            <CardText>{post.email}</CardText>
+                                            <br />
+                                            <div id="btn">
+                                                <Button>Push Me!!!</Button>
+                                            </div>
+                                        </CardBody>
+                                    </Card>
                                 </div>
 
-                            )}</div>
+                            )}
+                            <br />
+                            <br />
+                            </div>
                         ) : (
                                 <div className="spinner-border text-primary" role="status">
                                     <span className="sr-only">Loading...</span>
