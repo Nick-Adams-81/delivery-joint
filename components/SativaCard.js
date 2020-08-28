@@ -19,6 +19,17 @@ class SativaCard extends React.Component {
         this.setState({ posts: res.data })
         console.log(res)
 
+        this.handleClick = this.handleClick.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+
+    }
+
+    handleClick() {
+        alert('hello')
+    }
+
+    handleSubmit() {
+        alert("whats up")
     }
 
     render() {
@@ -28,21 +39,24 @@ class SativaCard extends React.Component {
                     <div className="main">
                         {this.state.posts.length > 0 ? (
                             <div>{this.state.posts.map((post) =>
-                                <div id="card-body">
+                                <div id="card-body" onSubmit={this.handleSubmit}>
                                     <Card>
-                                    <CardBody>
-                                        <CardTitle>{post.title}</CardTitle>
-                                        <br />
-                                        <CardSubtitle>{post.body}</CardSubtitle>
-                                        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                                        <Button>Button</Button>
-                                    </CardBody>
+                                        <CardBody key={post.id}>
+                                            <CardTitle>{post.title}</CardTitle>
+                                            <br />
+                                            <CardSubtitle>{post.body}</CardSubtitle>
+                                            <br />
+                                           <div id="btn">
+                                           <Button onClick={this.handleClick}>Button</Button>
+                                           </div>
+                                          
+                                        </CardBody>
                                     </Card>
                                 </div>
 
                             )}
-                            <br />
-                            <br />
+                                <br />
+                                <br />
                             </div>
                         ) : (
                                 <div className="spinner-border text-primary" role="status">
@@ -60,7 +74,7 @@ class SativaCard extends React.Component {
                           
                         }
                         #btn {
-                            margin-left: px;
+                            margin-left: 28%;
                         }
                         #card-body {
                             width: 30%;

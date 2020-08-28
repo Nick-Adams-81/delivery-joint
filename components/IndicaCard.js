@@ -19,6 +19,17 @@ class IndicaCard extends React.Component {
         this.setState({ posts: res.data })
         console.log(res)
 
+        this.handleClick = this.handleClick.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+
+    }
+
+    handleClick() {
+        alert('logic here')
+    }
+
+    handleSubmit() {
+        alert('more logic here')
     }
 
     render() {
@@ -40,7 +51,7 @@ class IndicaCard extends React.Component {
                                             <CardText>{post.email}</CardText>
                                             <br />
                                             <div id="btn">
-                                                <Button>Push Me!!!</Button>
+                                                <Button onClick={this.handleClick}>Push Me!!!</Button>
                                             </div>
                                         </CardBody>
                                     </Card>
