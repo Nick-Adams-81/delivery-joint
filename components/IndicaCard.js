@@ -56,7 +56,6 @@ class IndicaCard extends React.Component {
                                         </CardBody>
                                     </Card>
                                 </div>
-
                             )}
                                 <br />
                                 <br />

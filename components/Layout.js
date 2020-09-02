@@ -15,7 +15,6 @@ const Layout = (props) => (
         <div className="body">
             <Navbar />
             <Jumbotron />
-
             {props.children}
             <Footer />
 
