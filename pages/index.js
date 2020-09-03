@@ -17,7 +17,7 @@ const Index = () => (
                     <Col xs={6} sm={3}>
                             <Dropdown>
                                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faCannabis} height="90px" width="130px" />
+                                <FontAwesomeIcon icon={faCannabis} height="90px" width="150px" />
                                 <p id="lead">Flower</p>
                                 </Dropdown.Toggle>
 
@@ -33,7 +33,7 @@ const Index = () => (
                         
                         <Dropdown>
                                 <Dropdown.Toggle variant="danger" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faCookieBite} height="90px" width="130px" />
+                                <FontAwesomeIcon icon={faCookieBite} height="90px" width="150px" />
                                 <p id="lead">Edibles</p>
                                 </Dropdown.Toggle>
                                   
@@ -50,7 +50,7 @@ const Index = () => (
                         
                         <Dropdown>
                                 <Dropdown.Toggle variant="warning" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faJoint} height="90px" width="130px" />
+                                <FontAwesomeIcon icon={faJoint} height="90px" width="150px" />
                                 <p id="lead">Pre-Rolls</p>
                                 </Dropdown.Toggle>
 
@@ -68,7 +68,7 @@ const Index = () => (
                        
                         <Dropdown>
                                 <Dropdown.Toggle variant="primary" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faBong} height="90px" width="130px" />
+                                <FontAwesomeIcon icon={faBong} height="90px" width="150px" />
                                 <p id="lead">Merch</p>
                                 </Dropdown.Toggle>
          
@@ -83,7 +83,7 @@ const Index = () => (
 
                 </Row>
                 <br />
-                <h1>Our Brands</h1>
+                <h1>Top Selling Brands</h1>
                 <Row>
                     
                     <Col xs={6} sm={3}>

@@ -32,9 +32,10 @@ class HybridCard extends React.Component {
     }
 
 
-    handleSubmit(e) {
+    handleSubmit() {
+        axios.post("https://jsonplaceholder.typicode.com/posts")
         alert('wassup')
-        e.preventDefault()
+        
     }
 
     render() {
@@ -47,7 +48,9 @@ class HybridCard extends React.Component {
                                 <div id="card-body">
                                     <Card>
                                         <CardBody>
+                                            <div id="title">
                                             <CardTitle>{post.name}</CardTitle>
+                                            </div>
                                             <br />
                                             <CardSubtitle>{post.body}</CardSubtitle>
                                             <br />
@@ -84,6 +87,9 @@ class HybridCard extends React.Component {
                             display: inline-block;
                             margin: 5px;
                             box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
+                        }
+                        #title {
+                            border-bottom: 1.5px solid black;
                         }
                       
                     `}

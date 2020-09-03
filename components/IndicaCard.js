@@ -85,7 +85,8 @@ class IndicaCard extends React.Component {
                             box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
                         }
                         #title {
-                            
+                            border-bottom: 1.5px solid black;
+                        
                         }
                       
                     `}

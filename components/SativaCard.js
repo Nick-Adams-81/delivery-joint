@@ -17,7 +17,7 @@ class SativaCard extends React.Component {
     async componentDidMount() {
         let res = await axios.get("https://jsonplaceholder.typicode.com/posts?userId=1")
         this.setState({ posts: res.data })
-        console.log(res)
+        console.log(res.data)
 
         this.handleClick = this.handleClick.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
@@ -51,7 +51,7 @@ class SativaCard extends React.Component {
                                             <CardSubtitle>{post.body}</CardSubtitle>
                                             <br />
                                            <div id="btn">
-                                           <Button onClick={this.handleSubmit}>Button</Button>
+                                           <Button onClick={this.handleSubmit}>Click it!</Button>
                                            </div>
                                           
                                         </CardBody>
@@ -87,7 +87,7 @@ class SativaCard extends React.Component {
                             box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
                         }
                         #title {
-                           border-bottom: 1.5px solid black;
+                            border-bottom: 1.5px solid black;
                             height: 25%;
                             width: 100%;
 
