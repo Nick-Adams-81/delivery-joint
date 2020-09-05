@@ -1,13 +1,13 @@
 import Layout from '../components/Layout'
-import SativaCard from '../components/SativaCard'
-//import SativaCardHook from '../components/SativaCardHook'
+//import SativaCard from '../components/SativaCard'
+import SativaCardHook from '../components/SativaCardHook'
 
 
 const Sativa = (props) => (
     <Layout>
         <>
             <h1>Sativa</h1>
-            <SativaCard />
+            <SativaCardHook />
 
             <style jsx>
                 {

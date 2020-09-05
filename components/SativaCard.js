@@ -29,7 +29,7 @@ class SativaCard extends React.Component {
     }
 
     handleSubmit() {
-        axios.post("https://jsonplaceholder.typicode.com/posts")
+       
              alert("data posted")
             
     }
