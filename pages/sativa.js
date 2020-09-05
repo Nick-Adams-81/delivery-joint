@@ -1,15 +1,13 @@
 import Layout from '../components/Layout'
-import { Container, Row, Col } from 'reactstrap'
-import fetch from 'isomorphic-unfetch'
-import Index from '.';
-import SativaCard from '../components/SativaCard'
+//import SativaCard from '../components/SativaCard'
+import SativaCardHook from '../components/SativaCardHook'
 
 
 const Sativa = (props) => (
     <Layout>
         <>
             <h1>Sativa</h1>
-            <SativaCard />
+            <SativaCardHook />
 
             <style jsx>
                 {
