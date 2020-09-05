@@ -1,5 +1,5 @@
 import Layout from '../components/Layout'
-//import SativaCard from '../components/SativaCard'
+import SativaCard from '../components/SativaCard'
 import SativaCardHook from '../components/SativaCardHook'
 
 
