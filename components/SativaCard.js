@@ -45,10 +45,10 @@ class SativaCard extends React.Component {
                                     <Card>
                                         <CardBody key={post.id}>
                                             <div id='title'>
-                                            <CardTitle>{post.title}</CardTitle>
+                                            <CardTitle key={post.id}>{post.title}</CardTitle>
                                             </div>
                                             <br />
-                                            <CardSubtitle>{post.body}</CardSubtitle>
+                                            <CardSubtitle key={post.id}>{post.body}</CardSubtitle>
                                             <br />
                                            <div id="btn">
                                            <Button onClick={this.handleSubmit}>Click it!</Button>
