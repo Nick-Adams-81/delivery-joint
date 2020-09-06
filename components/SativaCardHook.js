@@ -29,6 +29,7 @@ const SativaCardHook = () => {
     return (
         <div>
             <div>
+                {/* mapping through our state(posts) and pulling out a single set of data for each card */}
                 {posts.map(post => (
                     <div id='card'>
                         <Card>
@@ -42,6 +43,7 @@ const SativaCardHook = () => {
                     </div>
                 ))}
             </div>
+            {/* our jsx stylesheet */}
             <style jsx>
                 {`
 
@@ -74,5 +76,5 @@ const SativaCardHook = () => {
 
 
 }
-
+// exporting the sativa card component
 export default SativaCardHook
