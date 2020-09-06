@@ -1,11 +1,12 @@
 import Layout from '../components/Layout'
 import IndicaCard from '../components/IndicaCard'
+import IndicaCardHook from '../components/IndicaCardHook'
 
 const Indica = () => (
     <Layout>
         <>
         <h1>Indica</h1>
-        <IndicaCard />
+        <IndicaCardHook />
         <style jsx>
             {`
             h1 {

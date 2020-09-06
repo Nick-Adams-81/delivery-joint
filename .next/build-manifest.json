@@ -24,6 +24,11 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/_error.js"
     ],
+    "/indica": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/indica.js"
+    ],
     "/sativa": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
