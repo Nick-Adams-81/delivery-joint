@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
-import SativaCard from '../components/SativaCard'
-import SativaCardHook from '../components/SativaCardHook'
+import SativaCard from '../components/Sativa/SativaCard'
+import SativaCardHook from '../components/Sativa/SativaCardHook'
 
 
 const Sativa = (props) => (

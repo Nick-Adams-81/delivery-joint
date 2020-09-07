@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
-import IndicaCard from '../components/IndicaCard'
-import IndicaCardHook from '../components/IndicaCardHook'
+import IndicaCard from '../components/Indica/IndicaCard'
+import IndicaCardHook from '../components/Indica/IndicaCardHook'
 
 const Indica = () => (
     <Layout>
