@@ -10,35 +10,39 @@ import {
 
 
 
-
+// Class component name
 class SativaCard extends React.Component {
+    // setting initial state to an empty array
     state = { posts: [] };
-
+    // Lifecycle method used for api data retrieving(using async await instead of promises)
     async componentDidMount() {
+        // storing our api endpoint in a variable 
         let res = await axios.get("https://jsonplaceholder.typicode.com/posts?userId=1")
+        // setting our state to the data we get from our api
         this.setState({ posts: res.data })
+        // logging the response from the api
         console.log(res.data)
-
+        // binding the 'this' key to our functions
         this.handleClick = this.handleClick.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
 
     }
-
+     // functions set up for future development( api calls )
     handleClick() {
         alert('hello')
     }
-
+     
     handleSubmit() {
-       
              alert("data posted")
-            
     }
-
+      
     render() {
+        // returning our data to be displayed in the browser
         return (
             <Container>
                 <Row>
                     <div className="main">
+                        {/* function mapping over our posts array */}
                         {this.state.posts.length > 0 ? (
                             <div>{this.state.posts.map((post) =>
                                 <div id="card-body" onSubmit={this.handleSubmit}>
@@ -62,11 +66,13 @@ class SativaCard extends React.Component {
                                 <br />
                                 <br />
                             </div>
+                            // if the page is loading a spinner icon will display, else the page will display in the browser
                         ) : (
                                 <div className="spinner-border text-primary" role="status">
                                     <span className="sr-only">Loading...</span>
                                 </div>
                             )}
+                            {/* our stylesheet (jsx format) */}
                         <style jsx>
                             {`
                         #list {
@@ -104,5 +110,5 @@ class SativaCard extends React.Component {
 
 }
 
-
+// exporting the entire component 
 export default SativaCard;
