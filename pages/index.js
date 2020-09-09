@@ -17,7 +17,10 @@ const Index = () => (
                     <Col xs={6} sm={3}>
                             <Dropdown>
                                 <Dropdown.Toggle variant="success" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faCannabis} height="90px" width="150px" />
+                                    <div id='weed'>
+                                        <FontAwesomeIcon icon={faCannabis} height="90px" width="150px" />
+                                    </div>
+                                
                                 <p id="lead">Flower</p>
                                 </Dropdown.Toggle>
 
@@ -32,8 +35,10 @@ const Index = () => (
                     <Col xs={6} sm={3}>
                         
                         <Dropdown>
-                                <Dropdown.Toggle variant="danger" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faCookieBite} height="90px" width="150px" />
+                                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                    <div id='cookie'>
+                                        <FontAwesomeIcon icon={faCookieBite} height="90px" width="150px" />
+                                    </div>
                                 <p id="lead">Edibles</p>
                                 </Dropdown.Toggle>
                                   
@@ -49,8 +54,10 @@ const Index = () => (
                     <Col xs={6} sm={3}>
                         
                         <Dropdown>
-                                <Dropdown.Toggle variant="warning" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faJoint} height="90px" width="150px" />
+                                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                    <div id='joint'>
+                                         <FontAwesomeIcon icon={faJoint} height="90px" width="150px" />
+                                    </div>
                                 <p id="lead">Pre-Rolls</p>
                                 </Dropdown.Toggle>
 
@@ -67,8 +74,10 @@ const Index = () => (
                     <Col xs={6} sm={3}>
                        
                         <Dropdown>
-                                <Dropdown.Toggle variant="primary" id="dropdown-basic">
-                                <FontAwesomeIcon icon={faBong} height="90px" width="150px" />
+                                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                    <div id='bong'>
+                                        <FontAwesomeIcon icon={faBong} height="90px" width="150px" />  
+                                    </div>
                                 <p id="lead">Merch</p>
                                 </Dropdown.Toggle>
          
@@ -139,6 +148,20 @@ const Index = () => (
                    margin-top: 4px;
                    font-family: "Times New Roman", Times, serif;
                    font-size: 20px;
+               }
+               #weed {
+                   color: #006400;
+               }
+               #cookie {
+                   color: #DEB887;
+               }
+               #joint {
+                   color: brown;
+
+               }
+               #bong {
+                   color: blue;
+
                }
              
                `}
