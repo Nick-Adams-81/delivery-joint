@@ -25,7 +25,7 @@ const Jumbotron = () => (
 
                 <Carousel.Caption>
                     <h3>DeliveryJoint</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>We have all the top brands.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -38,7 +38,7 @@ const Jumbotron = () => (
 
                 <Carousel.Caption>
                     <h3>DeliveryJoint</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <p>Best in the Sacramento valley.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
