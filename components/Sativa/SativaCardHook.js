@@ -1,11 +1,12 @@
 
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import Button from 'react-bootstrap/Button'
 import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle
 } from 'reactstrap';
-
+// Component name
 const SativaCardHook = () => {
     //  setting our state and function to update our state
     const [posts, setPosts] = useState([])
@@ -26,6 +27,11 @@ const SativaCardHook = () => {
                 console.log(err)
             })
     }, [])
+
+    function clickMe() {
+        // Future development here(api routes)
+        alert('im clicked')
+    }
     return (
         <div>
             <div>
@@ -39,6 +45,11 @@ const SativaCardHook = () => {
                             <div id='body'>
                                 <CardText>{post.body}</CardText>
                             </div>
+                            <br />
+                            <div id="btn">
+                                <Button variant="success" onClick={clickMe}>Click it!!!</Button>
+                            </div>
+                            <br />
                         </Card>
                     </div>
                 ))}
@@ -65,6 +76,9 @@ const SativaCardHook = () => {
                         background-color: slategrey;
                         color: blue;
 
+                    }
+                    #btn {
+                        margin-left: 31%
                     }
                     `}
             </style>
