@@ -11,14 +11,14 @@ import Dropdown from 'react-bootstrap/Dropdown'
 const Index = () => (
     <Layout>
         <>
-            <Container fluid>
+            <Container>
                 <h1>The Menu</h1>
                 <Row>
                     <Col xs={6} sm={3}>
                             <Dropdown>
-                                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                                     <div id='weed'>
-                                        <FontAwesomeIcon icon={faCannabis} height="90px" width="150px" />
+                                        <FontAwesomeIcon icon={faCannabis} height="80px" width="130px" />
                                     </div>
                                 
                                 <p id="lead">Flower</p>
@@ -35,9 +35,9 @@ const Index = () => (
                     <Col xs={6} sm={3}>
                         
                         <Dropdown>
-                                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                                     <div id='cookie'>
-                                        <FontAwesomeIcon icon={faCookieBite} height="90px" width="150px" />
+                                        <FontAwesomeIcon icon={faCookieBite} height="80px" width="130px" />
                                     </div>
                                 <p id="lead">Edibles</p>
                                 </Dropdown.Toggle>
@@ -54,9 +54,9 @@ const Index = () => (
                     <Col xs={6} sm={3}>
                         
                         <Dropdown>
-                                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                                     <div id='joint'>
-                                         <FontAwesomeIcon icon={faJoint} height="90px" width="150px" />
+                                         <FontAwesomeIcon icon={faJoint} height="80px" width="130px" />
                                     </div>
                                 <p id="lead">Pre-Rolls</p>
                                 </Dropdown.Toggle>
@@ -74,9 +74,9 @@ const Index = () => (
                     <Col xs={6} sm={3}>
                        
                         <Dropdown>
-                                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                                <Dropdown.Toggle variant="secondary" id="dropdown-basic">
                                     <div id='bong'>
-                                        <FontAwesomeIcon icon={faBong} height="90px" width="150px" />  
+                                        <FontAwesomeIcon icon={faBong} height="80px" width="130px" />  
                                     </div>
                                 <p id="lead">Merch</p>
                                 </Dropdown.Toggle>
@@ -93,6 +93,7 @@ const Index = () => (
                 </Row>
                 <br />
                 <h1>Top Selling Brands</h1>
+                <br />
                 <Row>
                     
                     <Col xs={6} sm={3}>
@@ -148,6 +149,7 @@ const Index = () => (
                    margin-top: 4px;
                    font-family: "Times New Roman", Times, serif;
                    font-size: 20px;
+                   color: black;
                }
                #weed {
                    color: #006400;
