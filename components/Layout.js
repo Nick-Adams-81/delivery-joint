@@ -21,7 +21,9 @@ const Layout = (props) => (
         </div>
         <style jsx>
             {`
-           
+              .body {
+                  background-color: whitesmoke;
+              }
             `}
         </style>
 

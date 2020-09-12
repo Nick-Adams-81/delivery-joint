@@ -75,6 +75,7 @@ const SativaCardHook = () => {
                         width: 100%;
                         background-color: slategrey;
                         color: blue;
+                        padding: 5px;
 
                     }
                     #btn {
