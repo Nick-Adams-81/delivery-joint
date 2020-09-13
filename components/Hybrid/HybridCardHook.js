@@ -22,14 +22,14 @@ const HybridCardHook = () => {
                 // Console logging any errors        
                 console.log(err)
             })
-    })
+    }, [])
     // Function for future development(api post route)
     function clickMe() {
         const data = {
             // dummy data for testing purposes
-            "userId": 200,
+            "userId": 250,
             "id": 4,
-            "title": "hello world",
+            "title": "hello people",
             "body": "test of axios post route"
         }
         // our axios api call

@@ -36,7 +36,7 @@ const SativaCardHook = () => {
             "title": "hello world",
             "body": "test of axios post route"
         }
-        // our axios call
+        // our axios api call
         axios
         // our dummy post http route for testing purposes
             .post('https://jsonplaceholder.typicode.com/posts', data)

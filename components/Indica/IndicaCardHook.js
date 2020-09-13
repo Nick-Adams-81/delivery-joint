@@ -27,9 +27,9 @@ const IndicaCardHook = () => {
     function handleClick() {
         const data = {
             // dummy data for testing purposes
-            "userId": 200,
+            "userId": 300,
             "id": 4,
-            "title": "hello world",
+            "title": "whats up world",
             "body": "test of axios post route"
         }
         // our axios api call
