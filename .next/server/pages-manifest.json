@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/indica": "pages/indica.js",
-  "/hybrid": "pages/hybrid.js"
+  "/hybrid": "pages/hybrid.js",
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
 }

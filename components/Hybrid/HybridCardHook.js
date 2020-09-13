@@ -40,6 +40,9 @@ const HybridCardHook = () => {
                 // logging our data 
                 console.log(data)
             })
+            .then(
+                alert("i've been clicked!")
+            )
             // error catching
             .catch((err) => {
                 console.log(err)
@@ -53,7 +56,7 @@ const HybridCardHook = () => {
                 {/* Function that maps over our data(state) array so we can pull out single 
                     pieces of data and displays the data in the form of a card in the browser */}
                 {data.map(data => (
-                    <div id="card">
+                    <div id="card" key={data.id}>
                         <div id="name">
                             {data.name}
                         </div>
