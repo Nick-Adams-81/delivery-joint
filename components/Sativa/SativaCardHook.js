@@ -27,17 +27,34 @@ const SativaCardHook = () => {
                 console.log(err)
             })
     }, [])
-
+     // function for our axios post route
     function clickMe() {
-        // Future development here(api routes)
-        alert('im clicked')
+        const data = {
+            // dummy data for testing purposes
+            "userId": 200,
+            "id": 4,
+            "title": "hello world",
+            "body": "test of axios post route"
+        }
+        // our axios call
+        axios
+        // our dummy post http route for testing purposes
+            .post('https://jsonplaceholder.typicode.com/posts', data)
+            .then(data => {
+                // logging our data 
+                console.log(data)
+            })
+            // error catching
+            .catch((err) => {
+                console.log(err)
+            })
     }
     return (
         <div>
             <div>
                 {/* mapping through our state(posts) and pulling out a single set of data for each card */}
                 {posts.map(post => (
-                    <div id='card'>
+                    <div id='card' key={post.id}>
                         <Card>
                             <div id="title">
                                 <CardTitle>{post.title}</CardTitle>
