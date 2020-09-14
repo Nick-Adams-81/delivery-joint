@@ -23,6 +23,7 @@ const Layout = (props) => (
             {`
               .body {
                   background-color: whitesmoke;
+                  width: 100%;
               }
             `}
         </style>
