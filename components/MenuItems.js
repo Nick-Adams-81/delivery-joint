@@ -95,7 +95,10 @@ const MenuItems = () => {
                 
                }
                #body {
-                  margin-left: 20px;
+                  margin: auto;
+                  width: 100%;
+                  
+                  padding: 10px;
                }
                #lead {
                    margin-top: 4px;
