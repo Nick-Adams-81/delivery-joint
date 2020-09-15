@@ -4,6 +4,7 @@ import { faCookieBite } from '@fortawesome/free-solid-svg-icons'
 import { faCannabis } from '@fortawesome/free-solid-svg-icons'
 import { faJoint } from '@fortawesome/free-solid-svg-icons'
 import { faBong } from '@fortawesome/free-solid-svg-icons'
+import { faFirstAid } from '@fortawesome/free-solid-svg-icons'
 import Dropdown from 'react-bootstrap/Dropdown'
 
 
@@ -81,6 +82,24 @@ const MenuItems = () => {
                         </Dropdown.Menu>
                     </Dropdown>
                 </div>
+
+                <div id="wax-1">
+
+                    <Dropdown>
+                        <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                            <div id='wax'>
+                                <FontAwesomeIcon icon={faFirstAid} height="70px" width="120px" />
+                            </div>
+                            <p id="lead">Wax</p>
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">Pipes/Bongs</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Lighters</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Apparel</Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                </div>
            
 
             <style jsx>
@@ -95,10 +114,11 @@ const MenuItems = () => {
                 
                }
                #body {
-                  margin: auto;
+                  display: block;
+                  margin-right: auto;
+                  margin-left: auto;
                   width: 100%;
-                  
-                  padding: 10px;
+                
                }
                #lead {
                    margin-top: 4px;
@@ -124,6 +144,10 @@ const MenuItems = () => {
                    display: inline-block;
 
                }
+               #wax {
+                   display: inline-block;
+                   color: #FF7F50;
+               }
                #weed-1 {
                    display: inline-block;
                    padding: 5px;
@@ -140,6 +164,10 @@ const MenuItems = () => {
                #bong-1 {
                    display: inline-block;
                    padding: 5px
+               }
+               #wax-1 {
+                   display: inline-block;
+                   padding: 5px;
                }
              
                `}

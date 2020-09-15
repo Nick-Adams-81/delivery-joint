@@ -58,8 +58,8 @@ const Index = () => (
 
              
                h1 {
-                   text-align: center;
-                   margin-top: 10px;
+                   
+                   margin: auto;
                    text-decoration: underline;
                    font-family: Georgia, serif;
                 
