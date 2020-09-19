@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Button from 'react-bootstrap/Button'
 import {
-    Card, CardImg, CardText, CardBody,
+    Card, CardBody,
     CardTitle, CardSubtitle
 } from 'reactstrap';
 // Component name
@@ -60,10 +60,10 @@ const HybridCardHook = () => {
                 {/* Function that maps over our data(state) array so we can pull out single 
                     pieces of data and displays the data in the form of a card in the browser */}
                 {data.map(data => (
-                    <div id="card-body">
+                    <div id="card-body" key={data.id}>
                         <Card>
                             <CardBody>
-                                <div id="card" key={data.id}>
+                                <div id="card">
                                     <CardTitle>
                                         <div id="name">
                                             {data.name}
@@ -74,11 +74,11 @@ const HybridCardHook = () => {
                                             {data.body}
                                         </div>
                                     </CardSubtitle>
-                                    <CardText>
+                                    
                                         <div id="email">
                                             {data.email}
                                         </div>
-                                    </CardText>
+                                    
                                     <div id='btn'>
                                         <Button variant="success" onClick={clickMe}>Click me!</Button>
                                     </div>
