@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Button from 'react-bootstrap/Button'
+import {
+    Card, CardImg, CardText, CardBody,
+    CardTitle, CardSubtitle
+} from 'reactstrap';
 // Component name
 const HybridCardHook = () => {
     // useState hook(initial state(data), and function to setState(setData), our initial state is set to an empty array)
@@ -27,21 +31,21 @@ const HybridCardHook = () => {
     function clickMe() {
         const newData = {
             // dummy data for testing purposes
-            "userId": 250,
-            "id": 4,
-            "title": "hello people",
-            "body": "test of axios post route"
+            "postId": 200,
+            "id": 1,
+            "name": 'test',
+            "body": 'another test'
         }
         // our axios api call
         axios
-        // our dummy post http route for testing purposes
+            // our dummy post http route for testing purposes
             .post('https://jsonplaceholder.typicode.com/posts', newData)
             .then(data => {
                 // logging our data 
                 console.log(data)
             })
             .then(
-                alert("i've been clicked!")
+                alert("data posted!")
             )
             // error catching
             .catch((err) => {
@@ -56,31 +60,44 @@ const HybridCardHook = () => {
                 {/* Function that maps over our data(state) array so we can pull out single 
                     pieces of data and displays the data in the form of a card in the browser */}
                 {data.map(data => (
-                    <div id="card" key={data.id}>
-                        <div id="name">
-                            {data.name}
-                        </div>
-                        <div id="body">
-                            {data.body}
-                        </div>
-                        <div id="email">
-                            {data.email}
-                        </div>
-                        <div id='btn'>
-                            <Button variant="success" onClick={clickMe}>Click me!</Button>
-                        </div>
+                    <div id="card-body">
+                        <Card>
+                            <CardBody>
+                                <div id="card" key={data.id}>
+                                    <CardTitle>
+                                        <div id="name">
+                                            {data.name}
+                                        </div>
+                                    </CardTitle>
+                                    <CardSubtitle>
+                                        <div id="body">
+                                            {data.body}
+                                        </div>
+                                    </CardSubtitle>
+                                    <CardText>
+                                        <div id="email">
+                                            {data.email}
+                                        </div>
+                                    </CardText>
+                                    <div id='btn'>
+                                        <Button variant="success" onClick={clickMe}>Click me!</Button>
+                                    </div>
+                                </div>
+                            </CardBody>
+                        </Card>
                     </div>
                 ))}
             </div>
             {/* our stylesheet(in jsx format) */}
             <style jsx>
                 {`
-                #card {
-                    width: 35%;
+                #card-body {
+                    width: 30%;
                     display: inline-block;
                     margin: 5px;
                     box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
                 }
+            
                 #name {
                     border-bottom: 1px solid black;
                     height: 25%;
@@ -88,6 +105,7 @@ const HybridCardHook = () => {
                     background-color: slategrey;
                     color: blue;
                     padding: 5px;
+                    margin: 5px;
                 }
                 #body {
                     padding: 3px;
@@ -100,7 +118,7 @@ const HybridCardHook = () => {
                 }
                 #btn {
                     padding: 9px;
-                    margin-left: 31%;
+                    margin-left: 25%;
                 }
                 
                 `}

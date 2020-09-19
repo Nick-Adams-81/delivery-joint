@@ -17,7 +17,9 @@ Your app should now be running on http://localhost:3000.
 
 ## Deployment(vercel)
 To deploy, simply add and commit your changes, and push to github. As long as your github repo is linked to
-vercel your app will deploy
+vercel your app will deploy.
+
+
 
 ## Deployed site
 * https://delivery-joint.vercel.app

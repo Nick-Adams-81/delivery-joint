@@ -8,7 +8,6 @@ const Index = () => (
         <>
             <Container>
                 <h1>The Menu</h1>
-               
                 <MenuItems />
                 <br />
                 <h1>Top Selling Brands</h1>
