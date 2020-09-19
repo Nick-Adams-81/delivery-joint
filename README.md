@@ -20,7 +20,7 @@ To deploy, simply add and commit your changes, and push to github. As long as yo
 vercel your app will deploy
 
 ## Deployed site
-* delivery-joint.vercel.app
+* https://delivery-joint.vercel.app
 
 ## Authored by:
 * Nick Adams
