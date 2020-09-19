@@ -76,7 +76,7 @@ const HybridCardHook = () => {
             <style jsx>
                 {`
                 #card {
-                    width: 32%;
+                    width: 35%;
                     display: inline-block;
                     margin: 5px;
                     box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
