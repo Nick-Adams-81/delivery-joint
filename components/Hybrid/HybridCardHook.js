@@ -87,6 +87,8 @@ const HybridCardHook = () => {
                         </Card>
                     </div>
                 ))}
+                <br />
+                <br />
             </div>
             {/* our stylesheet(in jsx format) */}
             <style jsx>
@@ -94,7 +96,7 @@ const HybridCardHook = () => {
                 #card-body {
                     width: 30%;
                     display: inline-block;
-                    margin: 5px;
+                    margin-left: 2%;
                     box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
                 }
             
@@ -117,8 +119,9 @@ const HybridCardHook = () => {
                     text-align: center;
                 }
                 #btn {
-                    padding: 9px;
-                    margin-left: 25%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 3px;
                 }
                 
                 `}

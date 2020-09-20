@@ -2,5 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/indica": "pages/indica.js",
+  "/sativa": "pages/sativa.js",
+  "/": "pages/index.js",
   "/hybrid": "pages/hybrid.js"
 }

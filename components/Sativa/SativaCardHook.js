@@ -1,10 +1,10 @@
-
+// our dependencies
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Button from 'react-bootstrap/Button'
 import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle
+    Card, CardText, CardBody,
+    CardTitle
 } from 'reactstrap';
 // Component name
 const SativaCardHook = () => {
@@ -70,6 +70,8 @@ const SativaCardHook = () => {
                         </Card>
                     </div>
                 ))}
+                <br />
+                <br />
             </div>
             {/* our jsx stylesheet */}
             <style jsx>
@@ -78,7 +80,8 @@ const SativaCardHook = () => {
                     #card {
                         width: 30%;
                         display: inline-block;
-                        margin: 5px;
+                        margin-left: 2%;
+                        margin-bottom: 1.5%;
                         box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
                      
                     }
@@ -96,7 +99,8 @@ const SativaCardHook = () => {
 
                     }
                     #btn {
-                        margin-left: 31%
+                        display: flex;
+                        justify-content: center;
                     }
                     `}
             </style>

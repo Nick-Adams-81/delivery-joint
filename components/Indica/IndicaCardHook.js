@@ -1,7 +1,11 @@
-// Our Imports
+// Our dependencies
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Button from 'react-bootstrap/Button'
+import {
+    Card, CardBody,
+    CardTitle, CardSubtitle
+} from 'reactstrap';
 // Component title
 const IndicaCardHook = () => {
     // useState hooks, setting initial state(info) to an empty array
@@ -34,7 +38,7 @@ const IndicaCardHook = () => {
         }
         // our axios api call
         axios
-        // our dummy post http route for testing purposes
+            // our dummy post http route for testing purposes
             .post('https://jsonplaceholder.typicode.com/posts', data)
             .then(data => {
                 // logging our data 
@@ -52,18 +56,26 @@ const IndicaCardHook = () => {
                 {/* mapping through our state(info) and pulling out a single set of data for each card */}
                 {info.map(info => (
                     <div id="card" key={info.id}>
-                        <div id='name'>
-                            {info.name}
-                        </div>
-                        <div id='body'>
-                            {info.body}
-                        </div>
-                        <div id='email'>
-                            {info.email}
-                        </div>
-                        <div id='btn'>
-                            <Button variant="success" onClick={handleClick}>Click it!!!</Button>
-                        </div>
+                        <Card>
+                            <CardBody>
+                                <CardTitle>
+                                    <div id='name'>
+                                        {info.name}
+                                    </div>
+                                </CardTitle>
+                                <CardSubtitle>
+                                    <div id='body'>
+                                        {info.body}
+                                    </div>
+                                </CardSubtitle>
+                                <div id='email'>
+                                    {info.email}
+                                </div>
+                                <div id='btn'>
+                                    <Button variant="success" onClick={handleClick}>Click it!!!</Button>
+                                </div>
+                            </CardBody>
+                        </Card>
                     </div>
 
                 ))}
@@ -72,7 +84,7 @@ const IndicaCardHook = () => {
             <style jsx>
                 {`
                 #card {
-                    width: 32%;
+                    width: 30%;
                     display: inline-block;
                     margin: 5px;
                     box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
@@ -89,8 +101,8 @@ const IndicaCardHook = () => {
                     margin: 5px;
                 }
                 #btn {
-                    margin-left: 33%;
-                    padding: 5px;
+                   display: flex;
+                   justify-content: center;
                 }
 
                 `}
