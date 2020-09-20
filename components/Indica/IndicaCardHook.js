@@ -86,7 +86,8 @@ const IndicaCardHook = () => {
                 #card {
                     width: 30%;
                     display: inline-block;
-                    margin: 5px;
+                    margin-left: 2%;
+                    margin-bottom: 1.5%;
                     box-shadow: 0 2px 3px #999999, 0 2px 3px #999999;
                 }
                 #name {
