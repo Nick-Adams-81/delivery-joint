@@ -13,7 +13,7 @@ const MenuItems = () => {
         <div id="body">
                 <div id="weed-1">
                     <Dropdown>
-                        <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                        <Dropdown.Toggle variant="primary" id="dropdown-basic">
                             <div id='weed'>
                                 <FontAwesomeIcon icon={faCannabis} height="70px" width="120px" />
                             </div>
