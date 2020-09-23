@@ -123,7 +123,7 @@ const MenuItems = () => {
                #lead {
                    margin-top: 4px;
                    font-family: "Times New Roman", Times, serif;
-                   font-size: 20px;
+                   font-size: 25px;
                    color: black;
                }
                #weed {
