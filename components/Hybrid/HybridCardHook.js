@@ -8,7 +8,7 @@ import {
 // Component name
 const HybridCardHook = () => {
     // useState hook(initial state(data), and function to setState(setData), our initial state is set to an empty array)
-    const [data, setData] = useState([])
+    const [data, setData] = useState([]);
     // useEffect for our api call(axios)
     useEffect(() => {
         axios
@@ -26,7 +26,7 @@ const HybridCardHook = () => {
                 // Console logging any errors        
                 console.log(err)
             })
-    }, [])
+    }, []);
     // Function for future development(api post route)
     function clickMe() {
         const newData = {
@@ -34,7 +34,8 @@ const HybridCardHook = () => {
             "postId": 200,
             "id": 1,
             "name": 'test',
-            "body": 'another test'
+            "body": 'another test',
+            "email": 'test.email'
         }
         // our axios api call
         axios
@@ -51,7 +52,7 @@ const HybridCardHook = () => {
             .catch((err) => {
                 console.log(err)
             })
-    }
+    };
 
     // Our return which will be displayed in the browser
     return (
@@ -127,7 +128,7 @@ const HybridCardHook = () => {
                 `}
             </style>
         </>
-    )
+    );
 
 
 }
