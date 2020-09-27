@@ -31,11 +31,7 @@ const HybridCardHook = () => {
     function clickMe() {
         const newData = {
             // dummy data for testing purposes
-            "postId": 200,
-            "id": 1,
-            "name": 'test',
-            "body": 'another test',
-            "email": 'test.email'
+            data
         }
         // our axios api call
         axios

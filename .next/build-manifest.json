@@ -28,6 +28,11 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/hybrid.js"
+    ],
+    "/sativa": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/sativa.js"
     ]
   },
   "ampFirstPages": []
