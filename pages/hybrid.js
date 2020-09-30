@@ -7,7 +7,7 @@ const Hybrid = () => (
     <Layout>
         <>
         <h1>Hybrid</h1>
-        <HybridCardHook />
+        <HybridCard />
         <style jsx>
             {`
             h1 {
