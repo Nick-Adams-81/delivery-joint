@@ -28,18 +28,12 @@ const IndicaCardHook = () => {
 
     }, [])
     // handle event functions will go here for future development( handleClick, handleSubmit, etc. )
-    function handleClick() {
-        const newData = {
-            // dummy data for testing purposes
-            "userId": 300,
-            "id": 4,
-            "title": "whats up world",
-            "body": "test of axios post route"
-        }
+    function handleClick(data) {
+      
         // our axios api call
         axios
             // our dummy post http route for testing purposes
-            .post('https://jsonplaceholder.typicode.com/posts', newData)
+            .post('https://jsonplaceholder.typicode.com/posts', data)
             .then(data => {
                 // logging our data 
                 console.log(data)

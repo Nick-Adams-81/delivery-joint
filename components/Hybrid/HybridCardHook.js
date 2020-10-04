@@ -29,11 +29,10 @@ const HybridCardHook = () => {
     }, []);
     // Function for future development(api post route)
     function clickMe(data) {
-       
         // our axios api call
         axios
             // our dummy post http route for testing purposes
-            .post('https://jsonplaceholder.typicode.com/posts', {data})
+            .post('https://jsonplaceholder.typicode.com/posts', data)
             .then(data => {
                 // logging our data 
                 console.log(data)

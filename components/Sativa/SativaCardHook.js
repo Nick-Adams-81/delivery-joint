@@ -28,14 +28,7 @@ const SativaCardHook = () => {
             })
     }, [])
      // function for our axios post route
-    function clickMe() {
-        const data = {
-            // dummy data for testing purposes
-            "userId": 200,
-            "id": 4,
-            "title": "hello world",
-            "body": "test of axios post route"
-        }
+    function clickMe(data) {
         // our axios api call
         axios
         // our dummy post http route for testing purposes
