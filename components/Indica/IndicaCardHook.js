@@ -28,12 +28,12 @@ const IndicaCardHook = () => {
 
     }, [])
     // handle event functions will go here for future development( handleClick, handleSubmit, etc. )
-    function handleClick(data) {
+    function handleClick(info) {
       
         // our axios api call
         axios
             // our dummy post http route for testing purposes
-            .post('https://jsonplaceholder.typicode.com/posts', data)
+            .post('https://jsonplaceholder.typicode.com/posts', info)
             .then(data => {
                 // logging our data 
                 console.log(data)
@@ -66,7 +66,7 @@ const IndicaCardHook = () => {
                                     {info.email}
                                 </div>
                                 <div id='btn'>
-                                    <Button variant="success" onClick={handleClick}>Click it!!!</Button>
+                                    <Button variant="success" onClick={() => {handleClick(info)}}>Click it!!!</Button>
                                 </div>
                             </CardBody>
                         </Card>

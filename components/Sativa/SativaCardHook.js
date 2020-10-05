@@ -28,11 +28,11 @@ const SativaCardHook = () => {
             })
     }, [])
      // function for our axios post route
-    function clickMe(data) {
+    function clickMe(post) {
         // our axios api call
         axios
         // our dummy post http route for testing purposes
-            .post('https://jsonplaceholder.typicode.com/posts', data)
+            .post('https://jsonplaceholder.typicode.com/posts', post)
             .then(data => {
                 // logging our data 
                 console.log(data)
@@ -57,7 +57,7 @@ const SativaCardHook = () => {
                             </div>
                             <br />
                             <div id="btn">
-                                <Button variant="success" onClick={clickMe}>Click it!!!</Button>
+                                <Button variant="success" onClick={() =>{clickMe(post)}}>Click it!!!</Button>
                             </div>
                             <br />
                         </Card>
