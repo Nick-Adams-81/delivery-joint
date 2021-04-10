@@ -29,7 +29,6 @@ const IndicaCardHook = () => {
     }, [])
     // handle event functions will go here for future development( handleClick, handleSubmit, etc. )
     function handleClick(info) {
-      
         // our axios api call
         axios
             // our dummy post http route for testing purposes
